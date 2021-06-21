@@ -13,42 +13,49 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <img src="/public/assets/logo.svg" alt="Logo do site Rocket.Q">
-    </header>
+    <div id="home" class="content">
+        <header id="header">
+            <img src="/public/assets/logo.svg" alt="Logo do site Rocket.Q">
+        </header>
 
-    <main>
-        <div class="container">
-            <section> 
-                <h2>
-                    Entre como participante
-                </h2>
-                <form action="">
-                    <label class="sr-only" for="room-id"> Código da sala</label> <!--usar o id linka com o input --> 
-                    <input type="number" id="room-id" placeholder="Código da sala"> <!-- Place holder é o texto que aparece dentro da caixa de texto-->
-                    <button> 
-                        <img src="/public/assets/entry-room.svg" alt="Entrar na sala">
-                        Entrar na sala
-                    </button>
-
-                </form>
-            </section>
-            <div class="separator">
-                <div></div>
-                <div>ou</div>
-                <div></div>
-            </div>
-            <section>
-                <h2>Crie sua própria sala de forma fácil</h2>
-                <a href="create-room.html">
-                    <img src="/public/assets/users.svg" alt="Criar sala">
-                    Criar sala
-                </a>
-
-            </section>
-
+        <div id="bg">
+            <!-- VAZIO POR ENQUANTO -->
         </div>
-    </main>
+    
+        <main>
+            <div class="container">
+                <section> 
+                    <h2>
+                        Entre como participante
+                    </h2>
+                    <form action="">
+                        <label class="sr-only" for="room-id"> Código da sala</label> <!--usar o id linka com o input --> 
+                        <input type="number" id="room-id" placeholder="Código da sala"> <!-- Place holder é o texto que aparece dentro da caixa de texto-->
+                        <button> 
+                            <img src="/public/assets/entry-room.svg" alt="Entrar na sala">
+                            Entrar na sala
+                        </button>
+    
+                    </form>
+                </section>
+                
+                <div class="separator">
+                    <div></div>
+                    <div>ou</div>
+                    <div></div>
+                </div>
+                <section>
+                    <h2>Crie sua própria sala de forma fácil</h2>
+                    <a href="create-room.html">
+                        <img src="/public/assets/users.svg" alt="Criar sala">
+                        Criar sala
+                    </a>
+    
+                </section>
+    
+            </div>
+        </main>
+    </div>
     
 </body>
 </html>
