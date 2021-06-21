@@ -38,7 +38,7 @@ body, button,input,textarea {
     /* Mais resets */
     font-size: clamp(14px, 1.6rem, 2vw); /*Intervalo de tamanho: Clamp diz que independente do tamanho, o min da fonte é 14px, por padrão 1.6rem e no max 2vw */
     font-family: 'Open Sans', sans-serif;
-    /* font-family: 'Poppins', sans-serif; */
+    
     
 }
 .content{
@@ -55,5 +55,58 @@ body, button,input,textarea {
     white-space: nowrap;
     border-width: 0;
 
+
+}
+/* Input e Buttons */
+input,button, .button {
+    border-radius: 0.8rem;
+    height:5rem;
+
+}
+
+button, .button {
+    font-family: Poppins;
+    font-weight: 500;
+    line-height: 0; /*Margem que acompanha o texto (espaçamento entre as linhas do texto ) */
+
+    display: flex;
+    align-items: center;
+    justify-content:center;
+
+    background: var(--blue);
+    color: var(--white);
+
+    transition: filter 0.2s;
+    
+    cursor: pointer;
+
+
+}
+
+button:hover, .button:hover {
+    filter: brightness(1.2); /* brightness aplica um filtro de brilho para meu hover */
+   
+
+}
+
+button > img, 
+.button > img {
+    margin-right: 1rem;
+    width: 2rem;
+}
+
+button.outlined, 
+.button {
+    background: var(--white);
+    color: var(--blue);
+    border: 0.2rem solid var(--blue);
+}
+
+.content header{
+    width: 80%;
+    margin: 3.5rem auto;
+}
+.content header img{
+    width: 16.7rem;
 
 }
